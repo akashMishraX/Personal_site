@@ -1,0 +1,258 @@
+:root {
+    --bg: #ffffff;
+    --text: #333333;
+    --primary: #495057;
+    --accent: #83bdff;
+    --border: #eaeaea;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+nav {
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+}
+
+nav a {
+    margin-right: 1.5rem;
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: var(--accent);
+    transition: 0.2s ease-in-out;
+}
+
+.content-section {
+    display: none;
+    animation: fadeIn 0.3s ease-in;
+}
+
+.content-section.active {
+    display: block;
+}
+
+/* Project styles */
+.card {
+    border: 1px solid var(--border);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 4px;
+}
+
+/* Blog post styles */
+.post-preview {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
+}
+
+/* Markdown content styles */
+.markdown-content {
+    padding: 1rem 0;
+}
+
+.markdown-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.markdown-content code {
+    background: #f4f4f4;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+}
+
+.markdown-content pre code {
+    display: block;
+    padding: 1em;
+    overflow-x: auto;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+/* Enhanced Markdown Styling */
+.markdown-content {
+    padding: 1rem 0;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* Headings */
+.markdown-content h1 {
+    font-size: 2.25rem;
+    margin: 2.5rem 0 1.5rem;
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 0.5rem;
+}
+
+.markdown-content h2 {
+    font-size: 1.8rem;
+    margin: 2.2rem 0 1.2rem;
+}
+
+.markdown-content h3 {
+    font-size: 1.5rem;
+    margin: 2rem 0 1rem;
+}
+
+.markdown-content h4 {
+    font-size: 1.25rem;
+    margin: 1.8rem 0 0.8rem;
+}
+
+/* Paragraphs and Lists */
+.markdown-content p {
+    margin: 1rem 0;
+}
+
+.markdown-content ul, 
+.markdown-content ol {
+    margin: 1rem 0;
+    padding-left: 2rem;
+}
+
+.markdown-content li {
+    margin: 0.5rem 0;
+}
+
+/* Blockquotes */
+.markdown-content blockquote {
+    margin: 1.5rem 0;
+    padding: 0.5rem 1rem;
+    border-left: 4px solid #0070f3;
+    background: #f8f9fa;
+    color: #495057;
+}
+
+/* Code blocks and inline code */
+.markdown-content pre {
+    background: #1a1a1a;
+    border-radius: 6px;
+    padding: 1rem;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+}
+
+.markdown-content code {
+    font-family: 'Fira Code', 'Consolas', monospace;
+    font-size: 0.9em;
+}
+
+.markdown-content :not(pre) > code {
+    background: #f4f4f4;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    color: #e83e8c;
+}
+
+/* Tables */
+.markdown-content table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1.5rem 0;
+}
+
+.markdown-content table th,
+.markdown-content table td {
+    border: 1px solid #dee2e6;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+.markdown-content table th {
+    background: #f8f9fa;
+}
+
+/* Images */
+.markdown-content img {
+    max-width: 100%;
+    height: auto;
+    margin: 1.5rem 0;
+    border-radius: 6px;
+}
+
+/* Links */
+.markdown-content a {
+    color: #0070f3;
+    text-decoration: none;
+}
+
+.markdown-content a:hover {
+    text-decoration: underline;
+}
+
+/* Horizontal Rule */
+.markdown-content hr {
+    margin: 2rem 0;
+    border: 0;
+    border-top: 2px solid #eaeaea;
+}
+
+.project-link {
+    display: flex;
+    border: 2px solid #eaeaea;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    background: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+.tag{
+    margin-right: 0.5rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    background: #eaeaea;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+}
+.post-title{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    /* border-bottom: 2px solid #eaeaea; */
+    padding-bottom: 0.5rem;
+    text-decoration: none;
+    color: #495057;
+}
+.post-title:hover{
+    color: var(--accent);
+    transition: 0.2s ease-in-out;
+}
+.post-preview{
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eaeaea;
+}
+.post-excerpt{
+    margin: 1rem 0;
+    color: var(--primary);
+}
+.resume-link{
+    text-decoration: none;
+    color: var(--primary);
+    
+}

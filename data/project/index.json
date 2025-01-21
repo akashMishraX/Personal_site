@@ -1,0 +1,27 @@
+[
+    {
+      "title": "Video Calling App",
+      "state": "completed",
+      "description": "A WebRTC-based video chat application that enables users to create and join video rooms, participate in video/audio calls, and exchange messages in real-time.",
+      "tags": ["Typescript", "Webrtc", "Redis", "Node.js"],
+      "link":"https://video.akashm.tech/"
+    },
+    {
+        "title": "Housing Service App",
+        "state": "completed",
+        "description": "The Household Service Management System aims to create a platform that connects services professions with customer seeking home services.This system allows booking feature, rating feature ,multi-role feature ,search feature and category feature with implementation of CRUD with REST architecture.",
+        "tags": ["Python ", "HTML " ,"Flask"],
+        "link":"https://github.com/akashMishraX/HousingServiceApp"
+    },
+    {
+      "title": "Quiz-Master",
+      "description": "Project description...",
+      "tags": ["Vuejs", "Flask", "Clery", "Redis"],
+      "state": "working",
+      "link":"",
+      "commit-data":[
+        
+      ]
+    }
+    
+]
