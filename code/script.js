@@ -59,13 +59,13 @@ class ContentLoader {
     }
 
     async loadMarkdownContent(path, element) {
-        const response = await fetch(`../data/${path}`);
+        const response = await fetch(`data/${path}`);
         const markdown = await response.text();
         element.innerHTML = marked.parse(markdown);
     }
     async loadMarkdownContent(path, element) {
         try {
-            const response = await fetch(`../data/${path}`);
+            const response = await fetch(`data/${path}`);
             const markdown = await response.text();
             element.innerHTML = marked.parse(markdown);
             
@@ -80,7 +80,7 @@ class ContentLoader {
         }
     }
     async loadProjects(element) {
-        const response = await fetch('../data/project/index.json');
+        const response = await fetch('data/project/index.json');
         const allProjects = await response.json();
         
         // Filter completed projects
@@ -96,7 +96,7 @@ class ContentLoader {
         `;
     }
     async loadCurrentWork(element) {
-        const response = await fetch('../data/project/index.json');
+        const response = await fetch('data/project/index.json');
         const allProjects = await response.json();
         
         // Filter in-progress projects
@@ -135,7 +135,7 @@ class ContentLoader {
         `;
     }
     async loadBlogPosts(element) {
-        const response = await fetch('../data/blog/index.json');
+        const response = await fetch('data/blog/index.json');
         const posts = await response.json();
         
         element.innerHTML = `
