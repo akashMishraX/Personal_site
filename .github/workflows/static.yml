@@ -26,16 +26,10 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
       
-      - name: Copy data files
-        run: |
-          mkdir -p ./dist
-          cp -r code/* ./dist/
-          cp -r data ./dist/
-      
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'
+          path: './code'
       
       - name: Deploy to GitHub Pages
         id: deployment
